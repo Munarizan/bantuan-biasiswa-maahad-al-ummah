@@ -1,0 +1,61 @@
+/* Custom styles to complement Tailwind CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom image loading animation */
+img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+img[loading] {
+    opacity: 0.5;
+}
+
+/* Smooth transitions for interactive elements */
+a, button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
+/* Custom styles for sections */
+section {
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom styles for search input */
+input[type="search"] {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
